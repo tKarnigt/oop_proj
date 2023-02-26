@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #5C7AEA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.covid.HomeController">
+    <left>
+        <AnchorPane prefHeight="720.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+    </left>
+   <center>
+        <AnchorPane prefHeight="720.0" prefWidth="800.0" style="-fx-background-color: #E6E6E6;" BorderPane.alignment="CENTER">
+            <children>
+            <ImageView fx:id="imageView1" fitHeight="720.0" fitWidth="1137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Pic/home1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageView2" fitHeight="720.0" fitWidth="1056.0" layoutX="24.0" layoutY="8.0" opacity="0.92" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Pic/home2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="doneLabel" alignment="CENTER" layoutX="499.0" layoutY="584.0" prefHeight="25.0" prefWidth="284.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="345.0" prefHeight="40.0" prefWidth="238.0" text="Fill out your information completely" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="288.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="395.0" text="in order to save the information" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="109.0" layoutY="428.0" text="in the system." textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="timelineBtn" layoutX="95.0" layoutY="478.0" mnemonicParsing="false" onAction="#timelineBtnOnAction" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: #74A0E7; -fx-background-radius: 20;" text="Timeline" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutBtn" layoutX="95.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutBtnOnAction" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Log out" textFill="#0c26d3">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imageView3" fitHeight="112.0" fitWidth="127.0" layoutX="476.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Pic/home3.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="612.0" layoutY="143.0" text="PATIENT INFORMATION">
+               <font>
+                  <Font name="Dosis Light" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="475.0" layoutY="254.0" text="First Name ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="724.0" layoutY="325.0" text="Phone number">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="725.0" layoutY="256.0" text="Last Name">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="vaccinationsLabel" layoutX="489.0" layoutY="395.0" text="Vaccinations : ??">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="474.0" layoutY="323.0" text="Identification Number">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ageLabel" layoutX="744.0" layoutY="395.0" text="Age : ?? ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="617.0" layoutY="576.0" mnemonicParsing="false" onAction="#editBtnOnAction" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #1365EA; -fx-background-radius: 20;" text="Edit your information" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imageView4" fitHeight="83.0" fitWidth="88.0" layoutX="115.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Pic/home4.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nameLabel" layoutX="474.0" layoutY="278.0" text="=========First Name====== " textFill="#211bbf">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lastnameLabel" layoutX="723.0" layoutY="278.0" prefHeight="20.0" prefWidth="216.0" text="=========Last Name====== " textFill="#211bbf">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="identificationNumberLabel" layoutX="475.0" layoutY="345.0" prefHeight="20.0" prefWidth="213.0" text="=========ID NUM========" textFill="#211bbf">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneNumberLabel" layoutX="723.0" layoutY="345.0" prefHeight="20.0" prefWidth="210.0" text="=======Phone nume====== " textFill="#211bbf">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="infectedLabel" alignment="CENTER" layoutX="619.0" layoutY="466.0" prefHeight="20.0" prefWidth="184.0" text="Detected / Not detected">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="bloodTypeLabel" layoutX="618.0" layoutY="395.0" text="Blood Type : ??">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="genderLabel" layoutX="816.0" layoutY="395.0" text="Gender : ??">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+   </center>
+</BorderPane>
